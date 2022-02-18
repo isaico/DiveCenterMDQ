@@ -1,6 +1,6 @@
 import React from "react";
 import LinkTo from "../components/LinkTo";
-import Nav from "./Nav";
+import About from "../screens/About";
 
 const Hero = () => {
   return (
@@ -28,7 +28,7 @@ const Hero = () => {
                   </span>
                 </h1>
                 <p class="lg:mt-8 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-7 md:text-xl lg:mx-0">
-                  Si siempre has querido aprender a bucear , descubrir nuevas aventuras o simplemente ver el admirable mundo bajo las aguas, en <span class="block text-cyan-400 xl:inline">
+                  Si siempre has querido aprender a bucear , descubrir nuevas aventuras o simplemente ver el admirable mundo bajo las aguas, en <span class="block text-cyan-600 font-semibold xl:inline">
                     DIVECENTER MDQ
                   </span> es donde todo comienza!!!!
                 </p>
@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            class=" w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full bg-fixed"
             // src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
             src="https://pbs.twimg.com/media/D-iRpokXoAAyAkv.jpg"
             
@@ -62,6 +62,7 @@ const Hero = () => {
           />
         </div>
       </div>
+      <About />
     </>
   );
 };

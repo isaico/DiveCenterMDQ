@@ -6,6 +6,7 @@ import Nav from "./layouts/Nav";
 import Footer from "./layouts/Footer";
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={ <Hero  /> }/>
           <Route exact path="/cursos" element={ <CourseView /> }/>
+          
         </Routes> 
         <Footer />
 
