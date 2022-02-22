@@ -42,6 +42,9 @@ code {
 .about-icon-container{
   @apply w-1/4 flex flex-col justify-center items-center
 }
+.page-heading-icon{
+  @apply md:w-8 h-8 text-gray-600
+}
 
 }
 

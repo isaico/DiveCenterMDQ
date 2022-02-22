@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import LinkTo from "../components/LinkTo";
 
@@ -64,7 +64,7 @@ const Nav = () => {
             />
 
             <LinkTo
-              to={"/"}
+              to={"/contacto"}
               className={"font-medium  text-gray-500 hover:text-gray-900"}
               text={"Contacto"}
             />

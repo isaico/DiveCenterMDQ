@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./layouts/Nav";
 import Footer from "./layouts/Footer";
+import Contact from "./screens/Contact";
 
 
 
@@ -14,6 +15,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route exact path="/" element={ <Hero  /> }/>
+          <Route exact path="/contacto" element={ <Contact  /> }/>
           <Route exact path="/cursos" element={ <CourseView /> }/>
           
         </Routes> 
