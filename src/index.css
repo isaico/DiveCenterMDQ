@@ -45,6 +45,14 @@ code {
 .page-heading-icon{
   @apply md:w-8 h-8 text-gray-600
 }
-
+.contact-col{
+  @apply flex justify-between md:py-4 md:px-3 rounded drop-shadow-lg my-2 flex-wrap sm:py-1 sm:px-1 
+}
+.contact-col-title{
+  @apply md:text-lg sm:text-base font-Poppins font-medium 
+}
+.contact-btn{
+  @apply py-4 px-8 rounded-xl drop-shadow-lg cursor-pointer bg-cyan-800 text-gray-100 my-10 hover:bg-cyan-600 hover:scale-105
+}
 }
 
