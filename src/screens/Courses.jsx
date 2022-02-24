@@ -1,16 +1,15 @@
 import callouts from "../helpers/dataCourses";
-import PageHeadingText from "../components/PageHeading/PageHeadingText";
 import { FaAtlas } from "react-icons/fa";
 import PageHeading from "../components/PageHeading/PageHeading";
+
 export default function Example() {
   return (
     <div className="bg-gray-100">
       <div className="max-w-7xl mx-auto ">
         <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-          {/* <h2 className="text-2xl font-extrabold text-gray-900">Cursos</h2> */}
+        
           <PageHeading text="Cursos" icon={FaAtlas} />
-          {/* <FaAtlas className="page-heading-icon" /> */}
-          
+
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
             {callouts.map((callout) => (
               <div key={callout.name} className="group relative">
@@ -33,6 +32,7 @@ export default function Example() {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </div>

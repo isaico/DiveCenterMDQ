@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -28,6 +29,10 @@ code {
   background-size:cover;
   background-position: 50% 70% ;
   
+}
+.stacked-waves-bg{
+  background-image: url(./assets/stacked-waves.svg);
+  background-size:cover;
 }
 @layer components{
 .about-icon{
@@ -52,7 +57,10 @@ code {
   @apply md:text-lg sm:text-base font-Poppins font-medium 
 }
 .contact-btn{
-  @apply py-4 px-8 rounded-xl drop-shadow-lg cursor-pointer bg-cyan-800 text-gray-100 my-10 hover:bg-cyan-600 hover:scale-105
+  @apply py-4 px-8 rounded-xl drop-shadow-md cursor-pointer bg-cyan-800 text-gray-100 my-10 hover:bg-cyan-600 hover:scale-105 hover:drop-shadow-xl
+}
+.contact-section-heading{
+  @apply  text-xl  text-gray-600 font-semibold my-10
 }
 }
 

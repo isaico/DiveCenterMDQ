@@ -4,7 +4,7 @@ import AboutIcons from "../components/AboutIcons";
 
 const About = () => {
   return (
-    <div id="about" className=" pt-16">
+    <div id="about" className=" pt-16 bg-gray-100">
        <div className="wave-bg w-full h-40 rotate-180"></div>
       <div className=" bg-cyan-800">
         <div className="flex justify-center py-10 items-center ">

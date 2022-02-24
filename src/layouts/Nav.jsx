@@ -5,7 +5,7 @@ import LinkTo from "../components/LinkTo";
 
 const Nav = () => {
   return (
-    <div className="absolute z-50 ">
+    <div className="absolute z-50 np">
       <div class="relative max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 ">
         <nav
           class="relative  flex items-center justify-between sm:h-12 lg:justify-start"
@@ -53,19 +53,19 @@ const Nav = () => {
                     </Link> */}
             <LinkTo
               to={"/"}
-              className={"font-medium  text-gray-500 hover:text-gray-900"}
+              className={"font-medium  text-gray-600 hover:text-black"}
               text={"Sobre nosotros"}
             />
 
             <LinkTo
               to={"/"}
-              className={"font-medium  text-gray-500 hover:text-gray-900"}
+              className={"font-medium  text-gray-600 hover:text-black"}
               text={"Noticias"}
             />
 
             <LinkTo
               to={"/contacto"}
-              className={"font-medium  text-gray-500 hover:text-gray-900"}
+              className={"font-medium  text-gray-600 hover:text-black"}
               text={"Contacto"}
             />
 
