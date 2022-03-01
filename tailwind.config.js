@@ -10,5 +10,8 @@ module.exports = {
       Poppins:["Poppins, sans-serif"]
     }
   },
+  variants:{
+    cursorPointer: ["hover","group-hover"]
+  },
   plugins: [],
 }

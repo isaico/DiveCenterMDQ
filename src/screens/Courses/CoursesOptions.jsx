@@ -16,6 +16,7 @@ const CoursesOptions = () => {
                 active="active-btn"
                 text="SDI"
                 className="courses-filter-btn"
+                
             />
             <LinkTo
                 to="/cursos/TDI"

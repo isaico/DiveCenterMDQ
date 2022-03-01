@@ -10,13 +10,15 @@ import CoursesOptions from "./CoursesOptions";
 const CoursesContainer = () => {
     //Hooks
     const { urlCourses } = useParams();
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [items, setItems] = useState([]);
+    
 
     //Coleccion de Firestore (base de datos)
     useEffect(() => {
         const db = getFirestore();
         const itemCollection = db.collection("cursos");
+        setLoading(true)
         //filtra segun categoria sea igual al urlCursos
         if (urlCourses) {
             const itemCollCategoria = itemCollection.where(
@@ -53,6 +55,7 @@ const CoursesContainer = () => {
     }, [urlCourses]);
 
     return (
+        
         <div className="bg-gray-100">
             {loading ? (
                 <Loader />
@@ -64,8 +67,10 @@ const CoursesContainer = () => {
                             className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none"
                         >
                             <PageHeading text="Cursos" icon={BiBook} />
-                            <CoursesOptions />
-                            <CoursesList courses={items} />
+                            <CoursesOptions />                       
+                            <CoursesList courses={items} loader={loading} />
+                            
+                           
                         </div>
                     </div>
                 </div>

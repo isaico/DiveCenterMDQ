@@ -72,13 +72,8 @@ code {
 .active-btn{
   @apply bg-red-500 text-gray-100 font-bold py-2 px-4 rounded-full
 }
-.loader{
-  animation: loader infinite 0.3s alternate;
+.course-info-btn:hover{
+  cursor: pointer;
 }
-@keyframes loader {
-    100% {
-      transform: translateY(-30px);
-    }
-  }
 
 
