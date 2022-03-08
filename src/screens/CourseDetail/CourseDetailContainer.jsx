@@ -32,13 +32,7 @@ const CourseDetailContainer = () => {
 
   return (
     <div>
-      {' '}
-      <h1>Hoaaaala</h1>
-      <h2>{`${urlDetailCourse}`}</h2>
-      <h2>{`${itemDetail.id}`}</h2>
-      {/* <h2>{`${itemDetail.id}`}</h2>
-      <h2>{`${itemDetail.name}`}</h2> */}
-      <AboutIcon></AboutIcon>
+      
       <ItemDetail item={itemDetail}></ItemDetail>
     </div>
   );
