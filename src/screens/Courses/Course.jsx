@@ -15,18 +15,14 @@ const Course = ({ courseProps }) => {
         to={`/detalle/${courseProps.id}`}
         className="text-white bg-gray-800 font-bold text-lg cursor-pointer  absolute top-1/3 left-1/2  -translate-x-1/2 py-2 px-4 rounded-full font-Poppins opacity-0 group-hover:cursor-pointer group-hover:opacity-100 group-hover:transition-all ease duration-300 hover:bg-cyan-700 z-50"
         text="Saber mas"
-        
-      >
-      </LinkTo>
-      <h3 className="mt-6 text-sm text-gray-500">
-        <a href={courseProps.href}>
-          <span className="absolute inset-0" />
-          {courseProps.description}
-        </a>
-      </h3>
-      <h3 className="text-base font-semibold text-gray-900">
+      ></LinkTo>
+      <h3 className="text-base mt-5 font-semibold text-gray-900">
         <span className="pr-1 text-red-500">{courseProps.category}</span>
         {courseProps.name}
+      </h3>
+      <h3 className="mt-1 text-sm text-gray-500">
+        
+        {courseProps.description}
       </h3>
     </div>
   );

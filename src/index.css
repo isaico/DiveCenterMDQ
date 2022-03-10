@@ -34,6 +34,15 @@ code {
   background-image: url(./assets/stacked-waves.svg);
   background-size:cover;
 }
+.bubble-bg{
+  background-image: url(./assets/bubble-bg.svg);
+  background-size:cover;
+}
+.sea-bg{
+  background-image: url(./assets/sea-bg-2.svg);
+  background-size:cover;
+  background-position: center;
+}
 @layer components{
 .about-icon{
   @apply sm:w-8 h-8 my-6 md:w-10 h-10 lg:w-12 h-12 text-cyan-800 

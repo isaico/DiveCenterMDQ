@@ -4,12 +4,14 @@ import { useParams } from 'react-router-dom';
 import { getFirestore } from '../../firebase/firebase';
 import AboutIcon from '../../components/AboutIcons';
 import ItemDetail from './ItemDetail';
+import { Loader } from '../../components/Loader';
 
 console.log('first');
 const CourseDetailContainer = () => {
   const { urlDetailCourse } = useParams();
   const [itemDetail, setItemDetail] = useState("sin datos");
   const [loading, setLoading] = useState(true);
+
   console.log('soy la url', urlDetailCourse);
   //   //   //fetch
   useEffect(() => {
@@ -32,8 +34,8 @@ const CourseDetailContainer = () => {
 
   return (
     <div>
-      
-      <ItemDetail item={itemDetail}></ItemDetail>
+      { loading? <Loader/>:
+      <ItemDetail item={itemDetail}></ItemDetail>}
     </div>
   );
 };
