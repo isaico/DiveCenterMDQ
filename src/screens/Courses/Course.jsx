@@ -13,7 +13,7 @@ const Course = ({ courseProps }) => {
       </div>
       <LinkTo
         to={`/detalle/${courseProps.id}`}
-        className="text-white bg-gray-800 font-bold text-lg cursor-pointer  absolute top-1/3 left-1/2  -translate-x-1/2 py-2 px-4 rounded-full font-Poppins opacity-0 group-hover:cursor-pointer group-hover:opacity-100 group-hover:transition-all ease duration-300 hover:bg-cyan-700 z-50"
+        className="text-white z-30 bg-gray-800 font-bold text-lg cursor-pointer  absolute top-1/3 left-1/2  -translate-x-1/2 py-2 px-4 rounded-full font-Poppins opacity-0 group-hover:cursor-pointer group-hover:opacity-100 group-hover:transition-all ease duration-300 hover:bg-cyan-700 "
         text="Saber mas"
       ></LinkTo>
       <h3 className="text-base mt-5 font-semibold text-gray-900">

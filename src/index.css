@@ -30,22 +30,25 @@ code {
   background-position: 50% 70% ;
   
 }
-.stacked-waves-bg{
+/* .stacked-waves-bg{
   background-image: url(./assets/stacked-waves.svg);
   background-size:cover;
-}
-.bubble-bg{
+} */
+/* .bubble-bg{
   background-image: url(./assets/bubble-bg.svg);
   background-size:cover;
-}
+} */
 .sea-bg{
   background-image: url(./assets/sea-bg-2.svg);
   background-size:cover;
   background-position: center;
 }
+.nav-trans{
+  transition: background ease-in 200ms ;
+}
 @layer components{
 .about-icon{
-  @apply sm:w-8 h-8 my-6 md:w-10 h-10 lg:w-12 h-12 text-cyan-800 
+  @apply sm:w-8 sm:h-8 my-6 md:w-10 md:h-10 lg:w-12 lg:h-12 text-cyan-800 
 }
 .about-icon-title{
   @apply text-xl text-cyan-700 font-semibold
@@ -75,11 +78,14 @@ code {
  @apply bg-cyan-600 hover:bg-cyan-700 text-gray-100 font-bold py-2 px-4 rounded-full 
 }
 .active-nav{
-  @apply border-b-2 border-cyan-500 text-cyan-500 font-medium py-1
-}
+  @apply border-b-2 border-black text-black  py-1 font-bold
 }
 .active-btn{
   @apply bg-red-500 text-gray-100 font-bold py-2 px-4 rounded-full
+}
+.nav-slide{ 
+  @apply  bg-cyan-800  drop-shadow-xl 
+}
 }
 .course-info-btn:hover{
   cursor: pointer;

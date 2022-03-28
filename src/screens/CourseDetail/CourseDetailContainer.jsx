@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getFirestore } from '../../firebase/firebase';
-import AboutIcon from '../../components/AboutIcons';
 import ItemDetail from './ItemDetail';
 import { Loader } from '../../components/Loader';
 

@@ -1,17 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import LinkTo from "../components/LinkTo";
+/* -------------------------------------------------------------------------- */
+/*                                NAV FUNCIONS                                */
+/* -------------------------------------------------------------------------- */
+const nav=document.getElementById('#nav');
 
+/* ------------------------------------ . ----------------------------------- */
 const Nav = () => {
+    const [scrollPos,setScrollPos]=useState(0)
+    const [navClass,setNavClass]=useState('')
+    const handleScroll=()=>{
+        setScrollPos(Math.round(window.scrollY))
+        console.log(scrollPos)
+        scrollPos > 50 ? setNavClass('nav-slide') : setNavClass('')
+    }
+        useEffect(()=>{
+            window.addEventListener('scroll',handleScroll)
+        })
+
     return (
-        <div className="absolute z-50 np">
-            <div class="relative max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8 ">
+        <div className={`w-full z-50 np fixed   ${navClass} transition ease py-4 px-4 sm:px-6 lg:px-8 `} id="nav" >
+            
                 <nav
-                    class="relative  flex items-center justify-between sm:h-12 lg:justify-start"
+                    class="flex items-center sm:h-12 justify-center "
                     aria-label="Global"
                 >
-                    <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                    <div class="flex  justify-self-start flex-grow flex-shrink-0 lg:flex-grow-0 ">
                         <div class="flex items-center justify-between w-full md:w-auto">
                             <Link to="/">
                                 <span class="sr-only">Workflow</span>
@@ -53,7 +69,7 @@ const Nav = () => {
                             to={"/"}
                             active="active-nav"
                             className={
-                                "font-medium  text-gray-600 hover:text-black "
+                                "font-bold  text-red-500 hover:text-red-700 "
                             }
                             text={"Sobre nosotros"}
                         />
@@ -62,7 +78,7 @@ const Nav = () => {
                             to={"/noticias"}
                             active="active-nav"
                             className={
-                                "font-medium  text-gray-600 hover:text-black"
+                                "font-bold  text-red-500 hover:text-red-700"
                             }
                             text={"Noticias"}
                         />
@@ -71,7 +87,7 @@ const Nav = () => {
                             to={"/contacto"}
                             active="active-nav"
                             className={
-                                "font-medium  text-gray-600 hover:text-black"
+                                "font-bold  text-red-500 hover:text-red-700"
                             }
                             text={"Contacto"}
                         />
@@ -86,18 +102,18 @@ const Nav = () => {
                         />
                     </div>
                 </nav>
-            </div>
+            
             {/* Burger Menu */}
-            <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+            {/* <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
                 <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
-                        <div>
+                       
                             <img
                                 class="h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                                 alt=""
                             />
-                        </div>
+                        
                         <div class="-mr-2">
                             <button
                                 type="button"
@@ -160,7 +176,7 @@ const Nav = () => {
                         Log in{" "}
                     </a>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

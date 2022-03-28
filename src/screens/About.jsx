@@ -19,10 +19,10 @@ const About = () => {
           </h2>
         </div>
         <div className="flex justify-center w-full text-gray-200 ">
-          <h3 className="w-1/2 my-16 text-3xl leading-10">
+          <h3 className="w-2/3 my-16 text-3xl leading-10">
             <span className="text-indigo-200  font-semibold text-2xl">MDQ BUCEO</span>{" "}
-            tiene todo lo que necesitas .. nos dedicamos exclusivamente a esta
-            actividad y contamos con instalaciones propias 🤿 ( Nos estamos
+            tiene todo lo que necesitas .. "nos dedicamos exclusivamente a esta
+            actividad y contamos con instalaciones propias 🤿" <br/>( Nos estamos
             renovando para brindarte un mejor servicio )
           </h3>
         </div>
@@ -31,6 +31,13 @@ const About = () => {
        
 
       <AboutIcons />
+        <div className=" w-2/3 mx-auto  text-gray-500 ">
+          <h3 className=" py-16 text-2xl leading-10"> En {" "}
+            <span className="text-indigo-300  font-semibold text-2xl">DIVECENTERMDQ</span> 
+            , contamos con la tecnologia mas avanzada en equipamientos y trajes para que obtengas la mejor capacitacion posible!!...y no solo eso,
+            vas a poder obtener certificaciones de  <spa className="text-indigo-300  font-semibold text-2xl">nivel internacional!!</spa>
+          </h3>
+        </div>
     </div>
   );
 };

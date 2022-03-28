@@ -3,13 +3,16 @@ import sdiLogo from '../../assets/sdilogo.png';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { Link} from 'react-router-dom';
 import DetailGrid from './DetailGrid';
+
+
 const ItemDetail = ({ item }) => {
+  
   return (
     <div className=" mx-auto py-16 sm:py-24 lg:py-32 ">
       <div className="  relative ">
 
        <Link to="/cursos">
-          <AiOutlineArrowLeft className="md:w-10 h-10 absolute top-0 left-0 z-50 hover:cursor-pointer text-gray-200 ml-5 hover:scale-105 hover:text-red-500 transition-all ease-out duration-300">  
+          <AiOutlineArrowLeft className="md:w-12 h-12 z-40 absolute top-0 left-0 z-50 hover:cursor-pointer text-gray-200 ml-5 hover:scale-105 hover:text-red-500 transition-all ease-out duration-300">  
           </AiOutlineArrowLeft>
           
        </Link>
