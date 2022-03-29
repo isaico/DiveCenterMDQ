@@ -13,7 +13,7 @@ const Nav = () => {
     const [navClass,setNavClass]=useState('')
     const handleScroll=()=>{
         setScrollPos(Math.round(window.scrollY))
-        console.log(scrollPos)
+        
         scrollPos > 50 ? setNavClass('nav-slide') : setNavClass('')
     }
         useEffect(()=>{

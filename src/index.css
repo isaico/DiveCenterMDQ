@@ -24,10 +24,23 @@ code {
 }
 
 .wave-bg{
-  //background-image: url(./assets/agua-azul2.png);
+  
   background-image: url(./assets/wavesOpacity.svg);
   background-size:cover;
   background-position: 50% 70% ;
+  
+}
+.wave-bg-blue{
+  
+  background-image: url(./assets/wavesOpacity-blue.svg);
+  background-size:cover;
+  background-position: 50% 70% ;
+  
+}
+.wave-bg-footer{
+  background-image: url(./assets/wave-bg.svg);
+  background-size:cover;
+  background-position: 50% 15% ;
   
 }
 /* .stacked-waves-bg{
@@ -69,10 +82,10 @@ code {
   @apply md:text-lg sm:text-base font-Poppins font-medium 
 }
 .contact-btn{
-  @apply py-4 px-8 rounded-xl drop-shadow-md cursor-pointer bg-cyan-800 text-gray-100 my-10 hover:bg-cyan-600 hover:scale-105 hover:drop-shadow-xl
+  @apply py-4 px-4 rounded-full  cursor-pointer  my-10 hover:scale-110 drop-shadow-xl
 }
 .contact-section-heading{
-  @apply  text-xl  text-gray-600 font-semibold my-10
+  @apply  text-xl  text-gray-600 font-semibold my-12
 }
 .courses-filter-btn{
  @apply bg-cyan-600 hover:bg-cyan-700 text-gray-100 font-bold py-2 px-4 rounded-full 

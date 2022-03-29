@@ -18,28 +18,28 @@ const Contact = () => {
           <PageHeading text="Contacto" icon={FaTelegramPlane} />
         </div>
         <div>
-          <h3 className="text-xl my-10  font-semibold text-gray-600">
+          <h3 className="text-xl my-10 pb-5 font-semibold text-gray-600">
             {' '}
             Si tenes dudas, no esperes mas y escribinos en cualquiera de
             nuestras redes! estamos disponibles 24/7 para asesorarte!
           </h3>
           <h3 className="contact-section-heading">Nuestras Redes</h3>
-          <div className="flex justify-evenly mx-auto">
+          <div className="flex justify-evenly mx-auto ">
             <div className="contact-btn">
               <a href="#">
                 {' '}
-                <FaFacebook className="md:w-10 md:h-10 " />
+                <FaFacebook className="md:w-12 md:h-12 text-sky-500" />
               </a>
             </div>
             <div className="contact-btn">
               <a href="#">
-                <FaInstagram className="md:w-10 md:h-10" />
+                <FaInstagram className="md:w-12 md:h-12 text-pink-500" />
               </a>
             </div>
             <div className="contact-btn">
               <a href="#">
                 {' '}
-                <FaWhatsapp className="md:w-10 md:h-10" />
+                <FaWhatsapp className="md:w-12 md:h-12 text-teal-500" />
               </a>
             </div>
           </div>
