@@ -6,7 +6,7 @@ import video from "../assets/video.mp4"
 const Hero = () => {
   return (
     <>
-      <div class="relative bg-gray-100 overflow-hidden ">
+      <div class="relative bg-gray-100 overflow-hidden "id="hero">
         <div class="max-w-7xl mx-auto ">
           <div class="  relative z-10 pb-8 bg-gray-100 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <svg
