@@ -1,9 +1,13 @@
 import React from "react";
 import LinkTo from "../../components/LinkTo";
+import Wave from 'react-wavify';
+
 
 const CoursesOptions = () => {
     return (
-        <div className="flex  justify-center my-10 space-x-4">
+        <div className="flex justify-center my-10 space-x-4">
+            
+            
             <LinkTo
                 
                 to="/cursos/"

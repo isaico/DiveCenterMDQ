@@ -43,14 +43,7 @@ code {
   background-position: 50% 15% ;
   
 }
-/* .stacked-waves-bg{
-  background-image: url(./assets/stacked-waves.svg);
-  background-size:cover;
-} */
-/* .bubble-bg{
-  background-image: url(./assets/bubble-bg.svg);
-  background-size:cover;
-} */
+
 .sea-bg{
   background-image: url(./assets/sea-bg-2.svg);
   background-size:cover;
@@ -59,6 +52,7 @@ code {
 .nav-trans{
   transition: background ease-in 200ms ;
 }
+
 @layer components{
 .about-icon{
   @apply sm:w-8 sm:h-8 my-6 md:w-10 md:h-10 lg:w-12 lg:h-12 text-cyan-800 

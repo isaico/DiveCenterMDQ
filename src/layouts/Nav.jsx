@@ -3,24 +3,25 @@ import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import LinkTo from '../components/LinkTo';
 
+
 const Nav = () => {
-//   const [scrollPos, setScrollPos] = useState(0);
-//   const [navClass, setNavClass] = useState('');
+  const [scrollPos, setScrollPos] = useState(0);
+  const [navClass, setNavClass] = useState('');
   /* -------------------------------------------------------------------------- */
   /*                                NAV FUNCIONS                                */
   /* -------------------------------------------------------------------------- */
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       setScrollPos(Math.round(window.scrollY));
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(Math.round(window.scrollY));
 
-//       scrollPos > 50 ? setNavClass('nav-slide') : setNavClass('');
-//     };
-//     window.addEventListener('scroll', handleScroll);
-//   }, [scrollPos]);
+      scrollPos > 50 ? setNavClass('nav-slide') : setNavClass('');
+    };
+    window.addEventListener('scroll', handleScroll);
+  }, [scrollPos]);
 
   return (
     <div
-      className={`w-full z-50 np fixed    transition ease py-4 px-4 sm:px-6 lg:px-8 `}
+      className={`w-full z-50 np fixed   ${navClass} transition ease py-4 px-4 sm:px-6 lg:px-8 `}
       id="nav"
     >
       <nav

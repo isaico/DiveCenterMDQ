@@ -40,6 +40,9 @@ const ItemDetail = ({ item }) => {
         
       <DetailGrid item={item}/>
       </div>
+      
+  
+ 
     </div>
   );
 };

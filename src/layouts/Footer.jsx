@@ -1,6 +1,6 @@
 import React from 'react';
 import {FaFacebook ,FaInstagram, FaWhatsapp} from "react-icons/fa"
-
+import Wave from 'react-wavify';
 
 //terminar modularizacion de iconos
 

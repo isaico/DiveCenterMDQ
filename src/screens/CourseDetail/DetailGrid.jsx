@@ -1,5 +1,6 @@
 import React from 'react';
 import GridText from './GridText';
+import {BsCheckAll} from 'react-icons/bs'
 
 const DetailGrid = ({ item }) => {
   return (
@@ -44,7 +45,7 @@ const DetailGrid = ({ item }) => {
               className="bg-slate-300 rounded-md p-3 flex items-center justify-center drop-shadow-sm "
               key={index}
             >
-              <p className="font-medium italic"> {value}</p>
+              <BsCheckAll className='w-10 min-h-10'/><p className="font-medium italic"> {value}</p>
             </div>
           ))}
         </div>
